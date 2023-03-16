@@ -4,14 +4,6 @@
 IHM pour communiquer avec le drone
 
 
-## Installation des dependencies
-
-A la racine du projet :
-
-```bash
-  pip install -r requirements.txt
-```
-
 
 ## Installation
 
