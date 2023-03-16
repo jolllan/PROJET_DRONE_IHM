@@ -3,7 +3,7 @@ from tkinter import ttk
 
 primary = Tk()
 
-frm = ttk.Frame(primary,padding=25,)
+frm = ttk.Frame(primary,padding=25)
 
 frm.grid()
 
