@@ -40,11 +40,9 @@ def add_marker_event(coords):
 # Fonction pour afficher coordonnées dans console clic gauche
 def left_click_event(coordinates_tuple):
     print("Left click event with coordinates:", coordinates_tuple)
-    
-    
-    
-    
+
 map_widget.add_left_click_map_command(left_click_event) 
+
 map_widget.add_right_click_menu_command(label="Add Marker",
                                         command=add_marker_event,
                                         pass_coords=True) 
@@ -52,5 +50,9 @@ map_widget.add_right_click_menu_command(label="Add Marker",
 # Vue sattelite google
 map_widget.set_tile_server("https://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)  # google satellite
 
+
+# map_widget.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
+
+map_widget.set_overlay_tile_server("http://a.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png")  # railway infrastructure
 # Lancemement de la fenêtre
 root_tk.mainloop()

@@ -2,3 +2,4 @@ tkinter
 tkintermapview==1.28
 pyinstaller==5.9.0
 pymavlink==2.4.37
+customtkinter==5.1.2
