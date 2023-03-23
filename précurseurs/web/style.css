@@ -1,0 +1,48 @@
+body {
+	background-color: #141414;
+	font-family: Arial, sans-serif;
+	color: #fff;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.profiles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile {
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.profile img {
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.profile p {
+	font-size: 20px;
+}
+
+.profile:hover {
+	transform: scale(1.1);
+}
