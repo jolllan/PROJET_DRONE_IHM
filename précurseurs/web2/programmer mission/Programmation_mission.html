@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Créer une mission</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="dark">
+	<div class="container">
+		<h1>Créer une mission</h1>
+		<form method="POST" action="/save">
+			<label for="nom">Nom de la mission :</label>
+			<input type="text" id="nom" name="nom">
+			<label for="description">Description de la mission :</label>
+			<input type="text" id="description" name="description">
+			<label for="date">Date et heure :</label>
+			<input type="datetime-local" id="date" name="date" step="1">
+			<label for="points">Nombre de points :</label>
+			<select id="points" name="points">
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<label for="altitude">Altitude :</label>
+			<input type="text" id="altitude" name="altitude">
+			<label for="latitude">Latitude :</label>
+			<input type="text" id="latitude" name="latitude">
+			<label for="longitude">Longitude :</label>
+			<input type="text" id="longitude" name="longitude">
+			<br><br>
+			<input type="submit" value="Enregistrer">
+		</form>
+	</div>
+</body>
+</html>
