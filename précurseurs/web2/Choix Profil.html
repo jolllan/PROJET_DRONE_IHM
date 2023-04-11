@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sélection de profil</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #222;
+			color: #fff;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 50px;
+		}
+
+		.profiles {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 50px;
+		}
+
+		.profile {
+			margin: 20px;
+			cursor: pointer;
+		}
+
+		.profile img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		.profile h2 {
+			margin-top: 20px;
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.connect {
+			display: none;
+			margin-top: 50px;
+		}
+
+		.connect label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+
+		.connect input[type="text"],
+		.connect input[type="password"] {
+			display: block;
+			margin-bottom: 20px;
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			background-color: #333;
+			color: #fff;
+			width: 300px;
+		}
+
+		.connect input[type="submit"] {
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f00;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Sélectionnez votre profil</h1>
+	<div class="profiles">
+		<div class="profile" onclick="showConnect('programmeur')">
+			<img src="https://placehold.it/200x200?text=Programmeur" alt="Programmeur">
+			<h2>Programmeur</h2>
+		</div>
+		<div class="profile" onclick="showConnect('technicien')">
+			<img src="https://placehold.it/200x200?text=Technicien" alt="Technicien">
+			<h2>Technicien</h2>
+		</div>
+		<div class="profile" onclick="showConnect('supervision')">
+			<img src="https://placehold.it/200x200?text=Supervision" alt="Supervision">
+			<h2>Supervision</h2>
+		</div>
+	</div>
+	<div class="connect" id="programmeur">
+		<h2>Connexion Programmeur</h2>
+		<form>
+			<label for="username">Nom d'utilisateur</label>
+			<input type="text" id="username" name="username">
+			<label for="password">Mot de passe</label>
+			<input type="password" id="password" name="password">
+			<input type="submit" value="Se connecter">
+		</form>
+	</div>
+	<div class="connect" id="technicien">
+		<h2>Connexion Technicien</h2>
+		<form>
